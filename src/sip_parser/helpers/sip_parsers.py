@@ -70,7 +70,7 @@ def parse_via(data: str):
 
     pat_ip4 = r"(?:\d{1,3}\.){3}\d{1,3}"
     pat_ip6 = r"\[[0-9a-fA-F:]+\]"   # just to recognize, not to validate
-    pat_hname = r"(?:[a-zA-Z0-9\-_]+\.)+[a-zA-Z0-9\-_]+"
+    pat_hname = r"(?:[a-zA-Z0-9\-_]+\.)*[a-zA-Z0-9\-_]+"
 
     # OLD CODE: did not recognize IPv6 addresses
     # m = re.match(r"SIP\s*\/\s*(\d+\.\d+)\s*\/\s*([\S]+)\s+([^\s;:]+)(?:\s*:\s*(\d+))?", data)
