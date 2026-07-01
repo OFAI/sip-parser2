@@ -1,5 +1,12 @@
 # SIP & SDP parser for Python
 
+## Copy of alxgb/sip-parser
+
+This repo is a modified copy of https://github.com/alxgb/sip-parser which looked abandoned.
+The changes and issues fixed can be seen from the commits and the issue tracker in the original tracker: https://github.com/alxgb/sip-parser/issues
+
+## Original README content
+
 This is a small pet project designed to fill the surprising lack (as of writing and to my knowledge) of any sort of standalone SIP parser in Python. The SDP parser comes as an extra, like in other SIP parser projects.
 
 - The **SIP parser** tries to be somewhat exhaustive, but may fail in certain edge cases, like some of the SIP Torture Test Messages in RFC 4475. Most of the SIP parser is actually a Python port of the Javascript one used by [sip.js](https://github.com/kirm/sip.js), with a couple tweaks to better parse some complex headers.
